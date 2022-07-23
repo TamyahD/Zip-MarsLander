@@ -67,6 +67,7 @@ public class Simulation {
         }
         printString(vehicle.checkFinalStatus());
         if (status != null) {
+            status = vehicle.getStatus(burnInterval);
             return status.getStatus();
         }
         return -1;
@@ -79,8 +80,9 @@ public class Simulation {
 
         Vehicle veh = new Vehicle(randomaltitude());
         Simulation sim = new Simulation(veh);
-        BurnDataStream source = new BurnDataStream();
+//        BurnStream source = new OnBoardComputer();
 //        BurnInputStream source = new BurnInputStream();
+        BurnDataStream source = new BurnDataStream();
         sim.runSimulation(source);
     }
 

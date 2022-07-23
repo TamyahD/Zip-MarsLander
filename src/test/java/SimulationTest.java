@@ -11,6 +11,12 @@ public class SimulationTest {
                 100, 100, 100, 100,
                 150, 125, 120, 100, 100, 100, 103,
                 100, 100, 100, 100};
+/*
+        int[] burns = {161, 161, 161, 161, 160, 160, 160, 160, 159,
+                159, 158, 157, 155,
+                153, 149, 143, 134, 124, 113, 106,
+                103, 103, 99};
+*/
         BurnStream burnSource = new BurnDataStream(burns);
         Simulation game = new Simulation(new Vehicle(5000));
         int okay = game.runSimulation(burnSource);
