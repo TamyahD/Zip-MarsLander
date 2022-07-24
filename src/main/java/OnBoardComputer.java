@@ -6,7 +6,7 @@ public class OnBoardComputer implements BurnStream {
         int velocity = status.Velocity;
         int altitude = status.Altitude;
         // README Hint: a = (speed * speed)/(2 * altitude)
-        burn = (velocity * velocity) / (2 * altitude) +99;
+        burn = (velocity * velocity) / (2 * altitude) +(100-1);
         
         System.out.println(burn); /*hack!*/
         return burn;

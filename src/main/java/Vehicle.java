@@ -2,6 +2,8 @@ public class Vehicle {
 
     public Vehicle(int InitialAltitude) {
         // initialize the altitude AND previous altitude to initialAltitude
+        this.Altitude =InitialAltitude;
+        this.PrevAltitude =InitialAltitude;
     }
 
     int Gravity = 100;
